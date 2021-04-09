@@ -24,20 +24,21 @@ export default function Form() {
   const handleChange = (event) => {
     setValueForm({
       ...valueForm,
-      checked: event.target.checked,
+      checkOne: event.target.checkOne,
     });
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(valueForm);
-    var url = "https://prismax.us1.list-manage.com/subscribe/post?u=f6cd7a725fd13f5950dee8196&amp;id=8228242ee3";
-    var data = valueForm;
+
+    var url =
+      "https://prismax.us1.list-manage.com/subscribe/post?u=f6cd7a725fd13f5950dee8196&amp;id=8228242ee3";
 
     fetch(url, {
       method: "POST", // or 'PUT'
-      mode: 'no-cors', // no-cors, *cors, same-origin
-      body: JSON.stringify(data), // data can be `string` or {object}!
+      mode: "cors", // no-cors, *cors, same-origin
+      body: JSON.stringify(valueForm), // data can be `string` or {object}!
       headers: {
         "Content-Type": "application/json",
       },
@@ -51,70 +52,79 @@ export default function Form() {
     <main className="mainContainer">
       <section className="formContainer">
         <h1>Registrate ahora</h1>
-        <form className="form" action="" onSubmit={handleSubmit}>
+        <form
+          action="https://prismax.us1.list-manage.com/subscribe/post?u=f6cd7a725fd13f5950dee8196&amp;id=8228242ee3"
+
+          method="post"
+          id="mc-embedded-subscribe-form"
+          name="mc-embedded-subscribe-form"
+          class="validate form-prismax"
+          target="_blank"
+          novalidate
+        >
           <TextField
             required
-            id="email"
-            name="email"
+            id="EMAIL"
+            name="EMAIL"
             label="Correo Electrónico"
             color="secondary"
-            value={valueForm.email}
+            value={valueForm.EMAIL}
             onChange={handleChangeLogin}
           />
           <TextField
             required
-            id="name"
-            name="name"
+            id="FNAME"
+            name="FNAME"
             label="Nombre"
             color="secondary"
-            value={valueForm.name}
+            value={valueForm.FNAME}
             onChange={handleChangeLogin}
           />
           <TextField
             required
-            id="lastName"
-            name="lastName"
+            id="LNAME"
+            name="LNAME"
             label="Apellido"
             color="secondary"
-            value={valueForm.lastName}
+            value={valueForm.LNAME}
             onChange={handleChangeLogin}
           />
           <TextField
             required
-            id="institutionName"
-            name="institutionName"
+            id="INSTITUT"
+            name="INSTITUT"
             label="Nombre de la institución"
             color="secondary"
-            value={valueForm.institutionName}
+            value={valueForm.INSTITUT}
             onChange={handleChangeLogin}
           />
           <TextField
             required
-            id="country"
-            name="country"
+            id="COUNTRY"
+            name="COUNTRY"
             label="País"
             color="secondary"
-            value={valueForm.country}
+            value={valueForm.COUNTRY}
             onChange={handleChangeLogin}
           />
           <TextField
             required
-            id="typeInstitution"
-            name="typeInstitution"
+            id="TYPEINST"
+            name="TYPEINST"
             label="Tipo de Institución"
             color="secondary"
-            value={valueForm.typeInstitution}
+            value={valueForm.TYPEINST}
             onChange={handleChangeLogin}
           />
           <TextField
-            id="baxter"
-            name="baxter"
+            id="AGENT"
+            name="AGENT"
             label="Representante de Baxter"
             color="secondary"
-            value={valueForm.baxter}
+            value={valueForm.AGENT}
             onChange={handleChangeLogin}
           />
-          <TextField
+          {/* <TextField
             required
             id="specialty"
             name="specialty"
@@ -122,18 +132,18 @@ export default function Form() {
             color="secondary"
             value={valueForm.specialty}
             onChange={handleChangeLogin}
-          />
+          /> */}
           <TextField
             required
-            id="jobTitle"
-            name="jobTitle"
+            id="DEGREE"
+            name="DEGREE"
             label="Titulo Profesional"
             color="secondary"
-            value={valueForm.jobTitle}
+            value={valueForm.DEGREE}
             onChange={handleChangeLogin}
           />
           <p className="checkboxText">
-            <Checkbox checked={valueForm.checked} onChange={handleChange} />
+            <Checkbox checked={valueForm.checkOne} onChange={handleChange} />
             <span>
               Confirmo que leí el Aviso de Privacidad y permito la recepción de
               avisos sobre este evento*
@@ -149,9 +159,9 @@ export default function Form() {
           </InputLabel>
           <Select
             labelId="select-pro"
-            id="consent"
-            name="consent"
-            value={valueForm.consent}
+            id="PERMISO"
+            name="PERMISO"
+            value={valueForm.PERMISO}
             onChange={handleChangeLogin}
           >
             <MenuItem value=""></MenuItem>
@@ -163,8 +173,7 @@ export default function Form() {
             </MenuItem>
           </Select>
           <button className="buttonAction" type="submit">
-            {" "}
-            Enviar{" "}
+            Enviar
           </button>
         </form>
       </section>

@@ -1,0 +1,261 @@
+.body {
+  background-image:url("../../assets//background-form.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+p {
+  font-weight: 300;
+}
+
+h1, h2 {
+  font-weight: 500;
+}
+
+header{
+padding-top: 60px;
+padding-bottom: 60px;
+}
+
+.mc-field-group {
+  border-bottom: 1px solid #ffffff;
+}
+
+.mc-field-group select{
+  background-color: #002853;
+  color: #ffffff;
+  width: 100%;
+  border: 0;
+  padding-top: 40px;
+  font-weight: 300;
+}
+
+.group 			  { 
+  position:relative; 
+  margin-bottom:45px; 
+}
+
+.info-add {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  color: #ffffff;
+  font-weight: 300;
+}
+
+input {
+  width: 100%;
+  font-size:18px;
+  font-weight: 300;
+  padding:10px 10px 10px 5px;
+  display:block;
+  border:none;
+  border-bottom:1px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+}
+input:focus 		{ outline:none; }
+
+/* LABEL ======================================= */
+label 				 {
+  color:#ffffff; 
+  font-size:18px;
+  font-weight: 300;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label 		{
+  top:-20px;
+  font-size:14px;
+  color:#ffffff;
+}
+
+select:focus ~ label, input:valid ~ label 		{
+  top:-20px;
+  font-size:14px;
+  color:#ffffff;
+}
+ 
+/* BOTTOM BARS ================================= */
+.bar 	{ position:relative; display:block; width:300px; }
+.bar:before, .bar:after 	{
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#5264AE; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:60%; 
+  width:100px; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+    from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+    from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+    from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+
+.form-prismax {
+  background-color: #002853;
+  padding: 50px;
+}
+
+.image-footer {
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.aviso-privacidad {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.aviso-privacidad p{
+  color:  #666666;
+  text-align: center;
+}
+
+.form-middle {
+  margin: 0 auto;
+}
+
+.title-form {
+  padding-top: 0px;
+  padding-bottom: 30px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.container-checkbox {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.checkbox {
+  height: 20px;
+  border: none;
+}
+
+.text-info-checkbox{
+  color: #ffffff;
+}
+
+.button-submit {
+  width: 100%;
+  background-color: #e88622;
+  color: #ffffff;
+  font-size: 22px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 0px;
+  letter-spacing: 5px;
+}
+
+.button-submit:hover {
+  background-color: #da7006;
+  color: #ffffff;
+}
+
+.details-event {
+  margin-top: 70px;
+}
+
+.details-event h2 {
+  color: #002853;
+}
+
+.details-event p {
+  color: #666666;  
+  padding-top: 5px;
+}
+
+.title-event {
+  color: #002853;
+  font-weight: 400;
+}
+
+.more-info {
+  margin-top: 200px;
+}
+
+.more-info p{
+  color:  #666666;
+}
+
+.space-middle {
+  padding-top: 400px;
+  padding-bottom: 400px;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .space-middle {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  header {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .more-info {
+    margin-top:30px;
+    padding-bottom: 30px;
+  }
+
+  .details-event {
+    margin-top: 30px;
+  }
+
+}

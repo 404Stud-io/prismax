@@ -26,14 +26,14 @@ form {
   justify-items: center;
   row-gap: 20px;
 }
-.form .MuiFormControl-root, .MuiInputBase-root {
+form .MuiFormControl-root, .MuiInputBase-root {
   width: 80%;
   text-align: center;
   color: #edefee ;
   font-family: 'Roboto';
   font-size: 27px;
 }
-.form .MuiFormLabel-root {
+form .MuiFormLabel-root {
   color: #edefee;
   font-family: 'Roboto';
   font-size: 27px;

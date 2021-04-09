@@ -5,17 +5,17 @@ export const Context = React.createContext();
 export const ContextProvider = ({ children }) => {
 
   const [valueForm, setValueForm] =useState({
-    email:"",
-    name: "",
-    lastName: "",
-    institutionName: "",
-    country: "",
-    typeInstitution: "",
-    baxter: "",
-    specialty: "",
-    jobTitle: "",
-    consent: "",
-    checked: false,
+    EMAIL:"",
+    FNAME: "",
+    LNAME: "",
+    INSTITUT: "",
+    COUNTRY: "",
+    TYPEINST: "",
+    AGENT: "",
+    // specialty: "",
+    DEGREE: "",
+    PERMISO: "",
+    checkOne: false,
   });
 
 
