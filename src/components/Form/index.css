@@ -1,0 +1,67 @@
+.mainContainer {
+  background-image: url('../../assets/background-form.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.formContainer {
+  background-color: #002863;
+  width: 929px;
+  height: 2047px;
+  margin-left: 80px;
+  margin-top: 80px;
+  contain: content;
+  border-radius: 10px;
+  text-align: center;
+  
+}
+.formContainer h1 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 59px;
+  color: #fff;
+  font-weight: bold;
+}
+form {
+  display: grid;
+  justify-items: center;
+  row-gap: 20px;
+}
+.form .MuiFormControl-root, .MuiInputBase-root {
+  width: 80%;
+  text-align: center;
+  color: #edefee ;
+  font-family: 'Roboto';
+  font-size: 27px;
+}
+.form .MuiFormLabel-root {
+  color: #edefee;
+  font-family: 'Roboto';
+  font-size: 27px;
+  font-weight: 300;
+}
+.checkboxText {
+  color: #edefee;
+  font-weight: 300;
+  font-size: 15px;
+  width: 700px;
+  text-align: initial;
+}
+.informationText {
+  color: #edefee;
+  font-weight: 300;
+  font-size: 22px;
+  width: 700px;
+  text-align: justify;
+}
+.buttonAction {
+  margin-top: 80px;
+  width: 535px;
+  height: 111px;
+  background-color: #e88622;
+  font-weight: 300;
+  font-size: 31px;
+  color: #fff;
+}
+
+
+
