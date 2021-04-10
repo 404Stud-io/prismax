@@ -6,7 +6,6 @@
 .formContainer {
   background-color: #002863;
   width: 929px;
-  height: 2047px;
   margin-left: 80px;
   margin-top: 80px;
   contain: content;
@@ -55,12 +54,17 @@ form .MuiFormLabel-root {
 }
 .buttonAction {
   margin-top: 80px;
+  margin-bottom: 80px;
   width: 535px;
   height: 111px;
   background-color: #e88622;
   font-weight: 300;
   font-size: 31px;
   color: #fff;
+}
+.buttonAction:disabled {
+  background-color: #edefee;
+  color: #425074;
 }
 
 
