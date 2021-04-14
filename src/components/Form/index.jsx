@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 // Style
-import "../Form/index.css";
+import "./index.css";
 
 // Context
 import { Context } from "../../utils/context";
