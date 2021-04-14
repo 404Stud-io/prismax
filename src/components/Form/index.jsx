@@ -32,22 +32,31 @@ export default function Form() {
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(valueForm);
-    var url =
-      "https://prismax.us1.list-manage.com/subscribe/post?u=f6cd7a725fd13f5950dee8196&amp;id=8228242ee3";
-
-    fetch(url, {
-      method: "POST", // or 'PUT'
-      mode: "no-cors", // no-cors, *cors, same-origin
-      body: valueForm, // JSON.stringifydata can be `string` or {object}!
+    fetch('https://us1.api.mailchimp.com/3.0/lists/8228242ee3', {
+      method: 'POST',
+      body: JSON.stringify(valueForm),
       headers: {
         "Content-Type": "application/json",
-      },
-    })
-      .then((res) => console.log(res))
+        Authorization: 'auth ccc3fb27fe5911f0d212d73f14a8bdf1-us1'
+      }})
       .then((res)=> res.json())
-      .then((res) => console.log(res))
+      .then((res)=> console.log(res))
       .catch((error) => console.error("Error:", error))
       .then((response) => console.log("Success:", response));
+      // var url = "https://us1.api.mailchimp.com/3.0/lists/8228242ee3";
+      // fetch(url, {
+    //   method: "POST", // or 'PUT'
+    //   mode: "no-cors", // no-cors, *cors, same-origin
+    //   body: JSON.stringify(valueForm), // JSON.stringifydata can be `string` or {object}!
+    //   headers: {
+    //     'Authorization': 'f6cd7a725fd13f5950dee8196',
+    //     'Content-Type': "application/json"
+    //   },
+    // })
+    //   .then((res)=> res.json())
+    //   .then((res) => console.log(res))
+    //   .catch((error) => console.error("Error:", error))
+    //   .then((response) => console.log("Success:", response));
   };
 
   return (
