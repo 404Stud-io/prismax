@@ -1,0 +1,36 @@
+.imageContainer {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../../assets/hero.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+.imageContainer img {
+  width: 100%;
+}
+.imageContainer .containerAction {
+  display: flex;
+  margin-top: 70vh;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 600px;
+}
+.imageContainer .containerAction .buttonRegister {
+  color: #e88622;
+  background-color: #fff;
+  width: 280px;
+  height: 83px;
+  border-radius: 5px;
+}
+.imageContainer .containerAction .buttonAccess {
+  color: #fff;
+  background-color: #e88622;
+  width: 280px;
+  height: 83px;
+  border-radius: 5px;
+}
+a {
+  text-decoration: none;
+}
