@@ -34,6 +34,7 @@ export default function Form() {
     console.log(valueForm);
     fetch('https://us1.api.mailchimp.com/3.0/lists/8228242ee3', {
       method: 'POST',
+      mode: "no-cors",
       body: JSON.stringify(valueForm),
       headers: {
         "Content-Type": "application/json",
