@@ -1,9 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// Material
+import Button from "@material-ui/core/Button";
 // Style
 import "./index.css";
-
-import Button from "@material-ui/core/Button";
+// Image
+import imageFooter from '../../assets/pleca.svg'
 
 export default function Hero() {
   return (
@@ -15,6 +16,7 @@ export default function Hero() {
           </a>
           <Button variant="contained" className="buttonAccess">Acceso</Button>
         </div>
+        <img src={imageFooter} alt=""/>
       </div>
     </>
   );

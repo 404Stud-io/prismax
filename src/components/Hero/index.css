@@ -1,21 +1,25 @@
 .imageContainer {
   width: 100vw;
   height: 100vh;
-  background-image: url('../../assets/hero.jpeg');
-  background-size: cover;
-  background-repeat: no-repeat;
   display: flex;
+  align-items: center;
+  background-size: cover;
+  flex-direction: column;
   justify-content: center;
+  background-repeat: no-repeat;
+  background-image: url('../../assets/hero.jpeg');
 }
 .imageContainer img {
-  width: 100%;
+  margin-top: -20vh;
+  contain: content; 
 }
 .imageContainer .containerAction {
   display: flex;
-  margin-top: 70vh;
+  margin-top: 80vh;
   flex-direction: row;
   justify-content: space-between;
   width: 600px;
+  z-index: 1;
 }
 .imageContainer .containerAction .buttonRegister {
   color: #e88622;
