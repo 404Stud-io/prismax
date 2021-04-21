@@ -10,7 +10,24 @@ export default function Menu() {
       <main>
         <div className="header">
           <h1>PrisMax</h1>
-          <div></div>
+          <div className="containerMenu">
+            <div className="containerItemMenu prismax">
+              <p>PrisMax</p>
+            </div>
+            <div className="containerItemMenu download">
+              <p>Descargables</p>
+            </div>
+            <div className="containerItemMenu schedule">
+              <p>Agenda</p>
+            </div>
+            <div className="containerItemMenu transmission">
+              <p>Sala de transmición</p>
+            </div>
+            <div className="containerItemMenu contact">
+              <p>Contacto</p>
+            </div>
+
+          </div>
         </div>
         <div className="infoContainer">
           <div className="infoMain">
