@@ -9,19 +9,19 @@ export default function Downloadable() {
       <h1 className="title">Descargables</h1>
       <div className="containerMenu">
         <div className="containerItemMenu prismax">
-          <p>PrisMax</p>
+          <p>Material 1</p>
         </div>
         <div className="containerItemMenu download">
-          <p>Descargables</p>
+          <p>Material 2</p>
         </div>
         <div className="containerItemMenu schedule">
-          <p>Agenda</p>
+          <p>Material 3</p>
         </div>
         <div className="containerItemMenu transmission">
-          <p>Sala de transmición</p>
+          <p>Material 4</p>
         </div>
         <div className="containerItemMenu contact">
-          <p>Contacto</p>
+          <p>Material 5</p>
         </div>
       </div>
 
