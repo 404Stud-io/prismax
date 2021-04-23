@@ -26,7 +26,6 @@ export default function Menu() {
             <div className="containerItemMenu contact">
               <p>Contacto</p>
             </div>
-
           </div>
         </div>
         <div className="infoContainer">
