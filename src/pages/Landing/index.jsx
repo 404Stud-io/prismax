@@ -1,4 +1,5 @@
 import React from "react";
+import Broadcast from "../../components/Broadcast";
 import Downloadable from "../../components/Downloadable";
 // Components
 import Hero from "../../components/Hero";
@@ -16,6 +17,7 @@ export default function Landing() {
       <Menu/>
       <Model3d/>
       <Downloadable/>
+      <Broadcast/>
     </>
   );
 }
