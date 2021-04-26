@@ -1,12 +1,11 @@
 import React from "react";
-import Broadcast from "../../components/Broadcast";
-import Downloadable from "../../components/Downloadable";
 // Components
+import Broadcast from "../../components/Broadcast";
+import Contact from "../../components/Contact";
+import Downloadable from "../../components/Downloadable";
 import Hero from "../../components/Hero";
 import Menu from "../../components/Menu";
 import Model3d from "../../components/Model3d";
-// Material
-
 
 
 export default function Landing() {
@@ -18,6 +17,7 @@ export default function Landing() {
       <Model3d/>
       <Downloadable/>
       <Broadcast/>
+      <Contact/>
     </>
   );
 }

@@ -17,6 +17,11 @@ export const ContextProvider = ({ children }) => {
     PERMISO: "",
     checkOne: false,
   });
+  const [valueContactForm, setValueContactForm] =useState({
+    name:"",
+    email: "",
+    commentary: "",
+  });
 
 
  // return Value
@@ -24,7 +29,9 @@ export const ContextProvider = ({ children }) => {
     <Context.Provider
       value={{
         valueForm, 
-        setValueForm
+        setValueForm,
+        valueContactForm, 
+        setValueContactForm
       }}
     >
       {children}

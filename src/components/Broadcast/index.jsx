@@ -24,6 +24,7 @@ export default function Broadcast() {
         allowTransparency="true"
         title="Chat de la sala de transmisión de Prismax"
       ></iframe>
+      <div className="spaceButton"></div>
     </section>
   );
 }
