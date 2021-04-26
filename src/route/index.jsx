@@ -1,4 +1,4 @@
-import React, { Suspense, lazy, useContext, useState } from "react";
+import React, { Suspense, lazy, useContext } from "react";
 // router
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Loading from "../components/Loading";
