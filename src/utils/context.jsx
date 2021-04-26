@@ -27,11 +27,15 @@ export const ContextProvider = ({ children }) => {
 
   const [login, setLogin] = useState(false);
 
+  const [isAuth, setIsAuth] = useState(false)
+
 
  // return Value
   return (
     <Context.Provider
       value={{
+        isAuth, 
+        setIsAuth,
         valueForm, 
         setValueForm,
         valueContactForm, 
