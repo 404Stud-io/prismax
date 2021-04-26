@@ -23,6 +23,10 @@ export const ContextProvider = ({ children }) => {
     commentary: "",
   });
 
+  const [dialogOpen, setDialogOpen] = useState(false);
+
+  const [login, setLogin] = useState(false);
+
 
  // return Value
   return (
@@ -31,7 +35,11 @@ export const ContextProvider = ({ children }) => {
         valueForm, 
         setValueForm,
         valueContactForm, 
-        setValueContactForm
+        setValueContactForm,
+        dialogOpen, 
+        setDialogOpen,
+        login, 
+        setLogin
       }}
     >
       {children}
