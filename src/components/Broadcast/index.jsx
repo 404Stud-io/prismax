@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.css";
 
-import logo from "../../assets/logo_prismax.svg";
+import logo from "../../assets/logoPrismax.svg";
 
 export default function Broadcast() {
   return (
