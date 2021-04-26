@@ -1,0 +1,46 @@
+.imageContainer {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-image: url('../../assets/hero.jpeg');
+}
+.imageContainer img {
+  margin-top: -20vh;
+  contain: content; 
+}
+.imageContainer .containerAction {
+  display: flex;
+  margin-top: 80vh;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 400px;
+  z-index: 1;
+}
+.imageContainer .containerAction .buttonRegister {
+  color: #e88622;
+  background-color: #fff;
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+}
+.imageContainer .containerAction .buttonAccess {
+  color: #fff;
+  background-color: #e88622;
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+}
+a {
+  text-decoration: none;
+}
+/* .form .MuiFormControl-root,  */
+.MuiInputBase-root {
+  color: black ;
+}

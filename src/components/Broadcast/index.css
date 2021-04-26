@@ -1,0 +1,42 @@
+
+.broadcastContainer {
+  width: 100vw;
+  background-image: url('../../assets/broadcast_room.svg');
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.broadcastContainer .logoImage {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  width: 200px;
+}
+
+.broadcastContainer h1 {
+  font-size: 4rem;
+  margin: 5rem 0 1rem 0;
+  color: #002853;
+}
+
+.broadcastContainer .streamContainer {
+  margin: 40px auto;
+}
+
+.broadcastContainer .streamContainer iframe {
+  width:60vw;
+  height:60vh;
+}
+.broadcastContainer  .chatPrismax {
+  border:none;
+  width:80%;
+  height:400px;
+  margin-bottom: 3rem;
+}
+.broadcastContainer .spaceButton {
+  width: 100%;
+  background-color: #e88622;
+  height: 3rem;
+}
