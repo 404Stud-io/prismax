@@ -54,6 +54,7 @@ export default function Hero() {
         console.log(result);
         if ((result === {"messege": "User not exists"})) {
           redirectForm();
+          setErrorEmail(true);
           // localData(result);
           // setLogin(true)
           // setDialogOpen(false);
