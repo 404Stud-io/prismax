@@ -17,7 +17,8 @@ import { Context } from "../../utils/context";
 
 export default function Hero() {
   const { dialogOpen, setDialogOpen, setLogin } = useContext(Context);
-  const [email, setEmail ] = useState("");
+  const [email, setEmail] = useState("");
+  const [errorEMail, setErrorEmail] = useState(false);
 
   // function handleChange email
   const handleChange = (event) => {
@@ -25,8 +26,12 @@ export default function Hero() {
   };
 
   const localData = (value) => {
-    localStorage.setItem('token', value);
+    localStorage.setItem("token", value);
   };
+
+  const redirectForm =() => {
+    window.location.href = "https://registro.prismax.com.mx/";
+  }
 
   const loginEmail = () => {
     var myHeaders = new Headers();
@@ -46,11 +51,18 @@ export default function Hero() {
     fetch("https://prismax.herokuapp.com/api/auth/login", requestOptions)
       .then((response) => response.text())
       .then((result) => {
-        localData(result);
-        setLogin(true)
-        setDialogOpen(false);
+        console.log(result);
+        if ((result === {"messege": "User not exists"})) {
+          redirectForm();
+          // localData(result);
+          // setLogin(true)
+          // setDialogOpen(false);
+        }
       })
-      .catch((error) => console.log("error", error));
+      .catch((error) =>
+        //  console.log("error", error)
+        console.log()
+      );
   };
   const handleClickOpen = () => {
     setDialogOpen(true);
@@ -104,6 +116,7 @@ export default function Hero() {
               onChange={handleChange}
               fullWidth
             />
+            {errorEMail? <small> Correo electrónico no identificado </small> : null }
           </DialogContent>
           <DialogActions>
             <Button onClick={handleClose} color="primary">

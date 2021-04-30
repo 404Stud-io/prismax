@@ -22,7 +22,6 @@ export default function Form() {
     });
   };
   const handleChange = (event) => {
-    console.log(event);
     setValueForm({
       ...valueForm,
       checkOne: event.target.checked,
@@ -44,20 +43,7 @@ export default function Form() {
       .then((res)=> console.log(res))
       .catch((error) => console.error("Error:", error))
       .then((response) => console.log("Success:", response));
-      // var url = "https://us1.api.mailchimp.com/3.0/lists/8228242ee3";
-      // fetch(url, {
-    //   method: "POST", // or 'PUT'
-    //   mode: "no-cors", // no-cors, *cors, same-origin
-    //   body: JSON.stringify(valueForm), // JSON.stringifydata can be `string` or {object}!
-    //   headers: {
-    //     'Authorization': 'f6cd7a725fd13f5950dee8196',
-    //     'Content-Type': "application/json"
-    //   },
-    // })
-    //   .then((res)=> res.json())
-    //   .then((res) => console.log(res))
-    //   .catch((error) => console.error("Error:", error))
-    //   .then((response) => console.log("Success:", response));
+    
   };
 
   return (

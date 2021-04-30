@@ -10,8 +10,6 @@ const PublicLanding = lazy(() => import("../pages/PublicLanding"));
 
 export default function Routes() {
   const { login, setLogin, isAuth, setIsAuth } = useContext(Context);
-
-  console.log(login, localStorage.getItem("token"));
   
   if( localStorage.getItem('token')) {
     setLogin(true)
