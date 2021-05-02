@@ -68,6 +68,9 @@
   font-weight: 300;
   font-size: 1.5rem;
 }
+.infoContainer .infoMain  .underline {
+  text-decoration: underline;
+}
 .infoContainer img {
   width: 100%;
 }

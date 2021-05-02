@@ -48,20 +48,57 @@ export default function Menu() {
               en cuidados intensivos de más de 50 UCIs alrededor del mundo
               buscando solucionar sus principales retos y necesidades.
             </p>
-            <p className="detail">Con más de 20 años de experiencia en cuidados intensivos, el sistema PrisMax ayuda al profesional de la salud a encontrar solución a las necesidades de su unidad de cuidados intensivos, maximizando la administración de terapias, la calidad de cuidados que recibe el paciente ahora y en el futuro a través de la mejora en simplicidad, eficiencia y precisión.  </p>
-            <p className="detail">El sistema PrisMax continúa el compromiso de Baxter con la seguridad, con características integradas que monitorean la configuración y administración de las terapias, reduciendo los errores humanos. </p>
-            <p className="detail">Terapias simplificadas</p>
-            <p className="detail">El sistema PrisMax está diseñado para simplificar la administración de TRRC, reduciendo también la carga de trabajo del personal de enfermería.  </p>
-            <p className="detail">Tratamientos más eficientes </p>
-            <p className="detail">El sistema PrisMax automatiza las tareas demandantes para agilizar el flujo de trabajo del profesional de la salud. </p>
-            <p className="detail">Mayor precisión </p>
-            <p className="detail">La tecnología del sistema PrisMax permite al profesional de la salud, optimizar la administración de terapias mejorando la precisión del tratamiento y el desempeño del sistema.  </p>
-            <p className="detail">Información de Uso</p>
-            <p className="detail">La unidad de control PrisMax está destinada para: </p>
-
-
+            <p className="detail">
+              Con más de 20 años de experiencia en cuidados intensivos, el
+              sistema PrisMax ayuda al profesional de la salud a encontrar
+              solución a las necesidades de su unidad de cuidados intensivos,
+              maximizando la administración de terapias, la calidad de cuidados
+              que recibe el paciente ahora y en el futuro a través de la mejora
+              en simplicidad, eficiencia y precisión.{" "}
+            </p>
+            <p className="detail">
+              El sistema PrisMax continúa el compromiso de Baxter con la
+              seguridad, con características integradas que monitorean la
+              configuración y administración de las terapias, reduciendo los
+              errores humanos.{" "}
+            </p>
+            <p className="detail underline">Terapias simplificadas</p>
+            <p className="detail">
+              El sistema PrisMax está diseñado para simplificar la
+              administración de TRRC, reduciendo también la carga de trabajo del
+              personal de enfermería.
+            </p>
+            <p className="detail underline">Tratamientos más eficientes </p>
+            <p className="detail">
+              El sistema PrisMax automatiza las tareas demandantes para agilizar
+              el flujo de trabajo del profesional de la salud.
+            </p>
+            <p className="detail underline">Mayor precisión </p>
+            <p className="detail">
+              La tecnología del sistema PrisMax permite al profesional de la
+              salud, optimizar la administración de terapias mejorando la
+              precisión del tratamiento y el desempeño del sistema.
+            </p>
+            <p className="detail underline">Información de Uso</p>
+            <p className="detail">
+              La unidad de control PrisMax está destinada para:
+            </p>
+            <ul>
+              <li className="detail">
+                Pacientes con TRRC 20kg. con falla renal aguda y/o sobrecarga de
+                fluidos.
+              </li>
+              <li className="detail">
+                Pacientes con RPT de 20kg. enfermedades donde la eliminación de
+                componentes plasmáticos es necesaria.
+              </li>
+              <li className="detail">
+                Todo los tratamientos administrados a través del Sistema PrisMax
+                deben ser indicados por un médico.
+              </li>
+            </ul>
           </div>
-          <img src={robot} alt="" />
+          <img src={robot} alt="footer" />
         </div>
       </main>
     </>
