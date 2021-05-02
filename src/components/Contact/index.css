@@ -21,7 +21,6 @@
   width: 60%;
   display: grid;
   row-gap: 1rem;
-
 }
 .form .MuiFormControl-root, .MuiInputBase-root {
   color: #edefee ;
@@ -34,4 +33,14 @@
   font-size: 1.5rem;
   padding: 0.5rem 4rem;
   margin: 1rem auto;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .form button {
+    margin: 1rem auto 9rem auto;
+  }
+  .contactContainer .form {
+    width: 90%;
+  }
 }
