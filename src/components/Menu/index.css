@@ -45,6 +45,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-top: 40vh;
+  cursor: pointer;
 }
 .infoContainer .infoMain {
   width: 80%;
@@ -69,4 +70,15 @@
 }
 .infoContainer img {
   width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .header .containerMenu {
+    flex-direction: column;
+  }
+  .infoContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 40vh;
+  }
 }

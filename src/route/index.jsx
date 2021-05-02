@@ -5,8 +5,8 @@ import Loading from "../components/Loading";
 // Context
 import { Context } from "../utils/context";
 
-const Landing = lazy(() => import("../pages/Landing"));
-const PublicLanding = lazy(() => import("../pages/PublicLanding"));
+const Landing = lazy(() => import("../pages/PublicLanding"));
+const PublicLanding = lazy(() => import("../pages/Landing"));
 
 export default function Routes() {
   const { login, setLogin, isAuth, setIsAuth } = useContext(Context);
@@ -21,13 +21,14 @@ export default function Routes() {
   return (
     <Router>
       <Suspense fallback={<Loading />}>
-        {isAuth ? (
+        {!isAuth ? (
           <Switch>
-            <Route exact path="/" component={PublicLanding} />
+            <Route exact path="/" component={Landing} />
+
           </Switch>
         ) : (
           <Switch>
-            <Route exact path="/" component={Landing} />
+            <Route exact path="/" component={PublicLanding} />
           </Switch>
         )}
       </Suspense>
