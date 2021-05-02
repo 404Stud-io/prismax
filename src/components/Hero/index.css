@@ -7,11 +7,14 @@
   flex-direction: column;
   justify-content: center;
   background-repeat: no-repeat;
-  background-image: url('../../assets/hero.jpeg');
+  background-image: url("../../assets/hero.jpeg");
+}
+.imageContainer .imageHero {
+  display: none;
 }
 .imageContainer img {
   margin-top: -20vh;
-  contain: content; 
+  contain: content;
 }
 .imageContainer .containerAction {
   display: flex;
@@ -42,5 +45,47 @@ a {
 }
 /* .form .MuiFormControl-root,  */
 .MuiInputBase-root {
-  color: black ;
+  color: black;
+}
+
+@media only screen and (max-width: 768px) {
+  .imageContainer {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-image: none;
+    background-color: #074bd1;
+  }
+  .imageContainer .imageHero {
+    display: block;
+    width: 100%;
+  }
+  .imageContainer .containerAction {
+    margin: 2rem;
+    justify-content: space-around;
+  }
+  .imageContainer img {
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  
+  .imageContainer .containerAction {
+    display: grid;
+    row-gap: 1rem;
+    width: 80%;
+  }
+  .imageContainer .containerAction .buttonRegister {
+    width: 80%;
+    font-size: 1rem;
+    padding: 0.5rem 2rem;
+  }
+  .imageContainer .containerAction .buttonAccess {
+    width: 80%;
+    font-size: 1rem;
+    padding: 0.5rem 2rem;
+  }
 }

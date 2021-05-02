@@ -12,6 +12,7 @@ import {
 // Style
 import "./index.css";
 // Image
+import imageHero from "../../assets/heroResponsive.jpeg"
 import imageFooter from "../../assets/pleca.svg";
 import { Context } from "../../utils/context";
 
@@ -26,12 +27,17 @@ export default function Hero() {
   };
 
   const localData = (value) => {
-    localStorage.setItem("token", value);
+    // console.log(value);
+    if (value.content('Auth Succesful')) {
+      localStorage.setItem("token", value);
+      setLogin(true);
+      setDialogOpen(false);
+    } else {
+      setErrorEmail(true);
+    }
   };
 
-  const redirectForm =() => {
-    window.location.href = "https://registro.prismax.com.mx/";
-  }
+
 
   const loginEmail = () => {
     var myHeaders = new Headers();
@@ -50,20 +56,8 @@ export default function Hero() {
 
     fetch("https://prismax.herokuapp.com/api/auth/login", requestOptions)
       .then((response) => response.text())
-      .then((result) => {
-        console.log(result);
-        if ((result === {"messege": "User not exists"})) {
-          redirectForm();
-          setErrorEmail(true);
-          // localData(result);
-          // setLogin(true)
-          // setDialogOpen(false);
-        }
-      })
-      .catch((error) =>
-        //  console.log("error", error)
-        console.log()
-      );
+      .then((result) => localData(result))
+      .catch((error) => setErrorEmail(true));
   };
   const handleClickOpen = () => {
     setDialogOpen(true);
@@ -76,6 +70,7 @@ export default function Hero() {
   return (
     <>
       <div className="imageContainer">
+        <img className="imageHero" src={imageHero} alt="Imagen heo"/>
         <div className="containerAction">
           <a href="https://registro.prismax.com.mx/">
             <Button
@@ -117,7 +112,14 @@ export default function Hero() {
               onChange={handleChange}
               fullWidth
             />
-            {errorEMail? <small> Correo electrónico no identificado </small> : null }
+            {errorEMail ? (
+              <small>
+                Correo electrónico no identificado,
+                <a href="https://registro.prismax.com.mx/">
+                  por favor registrate en el siguiente Link
+                </a>
+              </small>
+            ) : null}
           </DialogContent>
           <DialogActions>
             <Button onClick={handleClose} color="primary">
