@@ -21,7 +21,7 @@ export default function Routes() {
   return (
     <Router>
       <Suspense fallback={<Loading />}>
-        {!isAuth ? (
+        {isAuth ? (
           <Switch>
             <Route exact path="/" component={Landing} />
 
