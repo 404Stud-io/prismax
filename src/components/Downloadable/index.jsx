@@ -5,7 +5,7 @@ import "./index.css";
 import Agenda from '../../assets/agendaExample.png'
 export default function Downloadable() {
   return (
-    <div className="downloaderContainer">
+    <div className="downloaderContainer" id="download">
       <h1 className="title">Descargables</h1>
       <div className="containerMenu">
         <div className="containerItemMenu prismax">
@@ -25,7 +25,7 @@ export default function Downloadable() {
         </div>
       </div>
 
-      <div className="scheduleContainer ">
+      <div className="scheduleContainer " id="schedule">
         <h1> Agenda</h1>
         <div className="dateChip"> 
         <h2>13 de Mayo 2021</h2> 

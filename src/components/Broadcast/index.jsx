@@ -5,7 +5,7 @@ import logo from "../../assets/logoPrismax.svg";
 
 export default function Broadcast() {
   return (
-    <section className="broadcastContainer">
+    <section className="broadcastContainer" id="transmission">
       <img className="logoImage" src={logo} alt="Logo Pismax" />
       <h1 className="title">Sala de transmisión </h1>
       <div className="streamContainer">

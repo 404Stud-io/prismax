@@ -12,12 +12,12 @@ import {
 // Style
 import "./index.css";
 // Image
-import imageHero from "../../assets/heroResponsive.jpeg"
+import imageHero from "../../assets/heroResponsive.jpeg";
 import imageFooter from "../../assets/pleca.svg";
 import { Context } from "../../utils/context";
 
 export default function Hero() {
-  const { dialogOpen, setDialogOpen, setLogin } = useContext(Context);
+  const { dialogOpen, setDialogOpen, setLogin, isAuth } = useContext(Context);
   const [email, setEmail] = useState("");
   const [errorEMail, setErrorEmail] = useState(false);
 
@@ -27,7 +27,7 @@ export default function Hero() {
   };
 
   const localData = (value) => {
-    if (value?.message ==='Auth Succesful') {
+    if (value?.message === "Auth Succesful") {
       localStorage.setItem("token", value);
       setLogin(true);
       setDialogOpen(false);
@@ -35,8 +35,6 @@ export default function Hero() {
       setErrorEmail(true);
     }
   };
-
-
 
   const loginEmail = () => {
     var myHeaders = new Headers();
@@ -69,25 +67,29 @@ export default function Hero() {
   return (
     <>
       <div className="imageContainer">
-        <img className="imageHero" src={imageHero} alt="Imagen heo"/>
+        <img className="imageHero" src={imageHero} alt="Imagen heo" />
         <div className="containerAction">
-          <a href="https://registro.prismax.com.mx/">
-            <Button
-              type="button"
-              variant="contained"
-              className="buttonRegister"
-            >
-              Registro
-            </Button>
-          </a>
-          <Button
-            type="button"
-            onClick={handleClickOpen}
-            variant="contained"
-            className="buttonAccess"
-          >
-            Acceso
-          </Button>
+          {isAuth ? null : (
+            <>
+              <a href="https://registro.prismax.com.mx/">
+                <Button
+                  type="button"
+                  variant="contained"
+                  className="buttonRegister"
+                >
+                  Registro
+                </Button>
+              </a>
+              <Button
+                type="button"
+                onClick={handleClickOpen}
+                variant="contained"
+                className="buttonAccess"
+              >
+                Acceso
+              </Button>
+            </>
+          )}
         </div>
         <img src={imageFooter} alt="" />
         <Dialog

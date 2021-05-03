@@ -23,6 +23,7 @@
   padding: 0 2rem;
   color: #fff;
   font-size: 1.5rem;
+  cursor: pointer;
 }
 .prismax {
   background-color: #002853;
@@ -47,7 +48,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-top: 40vh;
-  cursor: pointer;
 }
 .infoContainer .infoMain {
   width: 80%;

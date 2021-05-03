@@ -3,6 +3,8 @@ import React from "react";
 import "./index.css";
 // Image
 import robot from "../../assets/robot.png";
+// scroll
+import { Link } from "react-scroll";
 
 export default function Menu() {
   return (
@@ -11,21 +13,21 @@ export default function Menu() {
         <div className="header">
           <h1>PrisMax</h1>
           <div className="containerMenu">
-            <div className="containerItemMenu prismax">
+            <Link className="containerItemMenu prismax" to="prismax" smooth={true} duration={1000} >
               <p>PrisMax</p>
-            </div>
-            <div className="containerItemMenu download">
+            </Link>
+            <Link className="containerItemMenu download" to="download" smooth={true} duration={1000} >
               <p>Descargables</p>
-            </div>
-            <div className="containerItemMenu schedule">
+            </Link>
+            <Link className="containerItemMenu schedule" to="schedule" smooth={true} duration={1000} >
               <p>Agenda</p>
-            </div>
-            <div className="containerItemMenu transmission">
+            </Link>
+            <Link className="containerItemMenu transmission" to="transmission" smooth={true} duration={1000} >
               <p>Sala de transmición</p>
-            </div>
-            <div className="containerItemMenu contact">
-              <p>Contacto</p>
-            </div>
+            </Link>
+            <Link className="containerItemMenu contact" to='contact'  smooth={true} duration={1000}>
+              <p>Contacto</p>  
+            </Link>
           </div>
         </div>
         <div className="infoContainer">

@@ -4,7 +4,7 @@ import "./index.css";
 
 export default function Model3d() {
   return (
-    <div className="modelContainer">
+    <div className="modelContainer" id="prismax">
       <h1 className="title">Modelo 3D</h1>
       <div className="videoContainer">
         <iframe
