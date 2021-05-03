@@ -1,5 +1,5 @@
 .downloaderContainer {
-  background-image: url('../../assets/AGENDA.svg');
+  background-image: url('../../assets/agend.svg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -16,9 +16,11 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  max-width: 900px;
+  margin: 0 auto;
 }
 .downloaderContainer .containerMenu .containerItemMenu {
-  padding: 0 70px;
+  padding: 0 2rem;
   color: #fff;
   font-size: 1.5rem;
 }
@@ -54,6 +56,12 @@
   color: #fff;
 }
 .scheduleContainer img {
-  width: 80%;
+  width: 90%;
   margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .downloaderContainer .containerMenu {
+    flex-direction: column;
+  }
 }

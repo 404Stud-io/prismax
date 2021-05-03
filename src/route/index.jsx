@@ -5,13 +5,11 @@ import Loading from "../components/Loading";
 // Context
 import { Context } from "../utils/context";
 
-const Landing = lazy(() => import("../pages/Landing"));
 const PublicLanding = lazy(() => import("../pages/PublicLanding"));
+const Landing = lazy(() => import("../pages/Landing"));
 
 export default function Routes() {
   const { login, setLogin, isAuth, setIsAuth } = useContext(Context);
-
-  console.log(login, localStorage.getItem("token"));
   
   if( localStorage.getItem('token')) {
     setLogin(true)
@@ -25,11 +23,11 @@ export default function Routes() {
       <Suspense fallback={<Loading />}>
         {isAuth ? (
           <Switch>
-            <Route exact path="/" component={PublicLanding} />
+            <Route exact path="/" component={Landing} />
           </Switch>
         ) : (
           <Switch>
-            <Route exact path="/" component={Landing} />
+            <Route exact path="/" component={PublicLanding} />
           </Switch>
         )}
       </Suspense>

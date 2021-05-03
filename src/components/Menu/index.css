@@ -16,11 +16,14 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  max-width: 900px;
+  margin: 0 auto;
 }
 .header .containerMenu .containerItemMenu {
-  padding: 0 70px;
+  padding: 0 2rem;
   color: #fff;
   font-size: 1.5rem;
+  cursor: pointer;
 }
 .prismax {
   background-color: #002853;
@@ -38,7 +41,7 @@
   background-color: #6385ba;
 }
 .infoContainer {
-  background-image: url('../../assets/PRISMAX.svg');
+  background-image: url('../../assets/prismaxx.svg');
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -67,6 +70,20 @@
   font-weight: 300;
   font-size: 1.5rem;
 }
+.infoContainer .infoMain  .underline {
+  text-decoration: underline;
+}
 .infoContainer img {
   width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .header .containerMenu {
+    flex-direction: column;
+  }
+  .infoContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 40vh;
+  }
 }

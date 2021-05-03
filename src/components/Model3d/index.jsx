@@ -4,7 +4,7 @@ import "./index.css";
 
 export default function Model3d() {
   return (
-    <div className="modelContainer">
+    <div className="modelContainer" id="prismax">
       <h1 className="title">Modelo 3D</h1>
       <div className="videoContainer">
         <iframe
@@ -12,9 +12,9 @@ export default function Model3d() {
           height="415"
           src="https://www.youtube.com/embed/Jky9I1ihAkg"
           title="YouTube video player"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
+          allowFullScreen
         ></iframe>
       </div>
     </div>

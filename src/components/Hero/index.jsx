@@ -12,12 +12,14 @@ import {
 // Style
 import "./index.css";
 // Image
+import imageHero from "../../assets/heroResponsive.jpeg";
 import imageFooter from "../../assets/pleca.svg";
 import { Context } from "../../utils/context";
 
 export default function Hero() {
-  const { dialogOpen, setDialogOpen, setLogin } = useContext(Context);
-  const [email, setEmail ] = useState("");
+  const { dialogOpen, setDialogOpen, setLogin, isAuth } = useContext(Context);
+  const [email, setEmail] = useState("");
+  const [errorEMail, setErrorEmail] = useState(false);
 
   // function handleChange email
   const handleChange = (event) => {
@@ -25,7 +27,13 @@ export default function Hero() {
   };
 
   const localData = (value) => {
-    localStorage.setItem('token', value);
+    if (value?.message === "Auth Succesful") {
+      localStorage.setItem("token", value);
+      setLogin(true);
+      setDialogOpen(false);
+    } else {
+      setErrorEmail(true);
+    }
   };
 
   const loginEmail = () => {
@@ -44,13 +52,9 @@ export default function Hero() {
     };
 
     fetch("https://prismax.herokuapp.com/api/auth/login", requestOptions)
-      .then((response) => response.text())
-      .then((result) => {
-        localData(result);
-        setLogin(true)
-        setDialogOpen(false);
-      })
-      .catch((error) => console.log("error", error));
+      .then((response) => response.json())
+      .then((result) => localData(result))
+      .catch((error) => setErrorEmail(true));
   };
   const handleClickOpen = () => {
     setDialogOpen(true);
@@ -63,24 +67,29 @@ export default function Hero() {
   return (
     <>
       <div className="imageContainer">
+        <img className="imageHero" src={imageHero} alt="Imagen heo" />
         <div className="containerAction">
-          <a href="https://registro.prismax.com.mx/">
-            <Button
-              type="button"
-              variant="contained"
-              className="buttonRegister"
-            >
-              Registro
-            </Button>
-          </a>
-          <Button
-            type="button"
-            onClick={handleClickOpen}
-            variant="contained"
-            className="buttonAccess"
-          >
-            Acceso
-          </Button>
+          {isAuth ? null : (
+            <>
+              <a href="https://registro.prismax.com.mx/">
+                <Button
+                  type="button"
+                  variant="contained"
+                  className="buttonRegister"
+                >
+                  Registro
+                </Button>
+              </a>
+              <Button
+                type="button"
+                onClick={handleClickOpen}
+                variant="contained"
+                className="buttonAccess"
+              >
+                Acceso
+              </Button>
+            </>
+          )}
         </div>
         <img src={imageFooter} alt="" />
         <Dialog
@@ -104,6 +113,14 @@ export default function Hero() {
               onChange={handleChange}
               fullWidth
             />
+            {errorEMail ? (
+              <small>
+                Correo electrónico no identificado,
+                <a href="https://registro.prismax.com.mx/">
+                  por favor registrate en el siguiente Link
+                </a>
+              </small>
+            ) : null}
           </DialogContent>
           <DialogActions>
             <Button onClick={handleClose} color="primary">

@@ -44,7 +44,7 @@ export default function Contact() {
   };
 
   return (
-    <section className="contactContainer">
+    <section className="contactContainer" id="contact">
       <h1 className="title">Contacto</h1>
       <form className="form" noValidate autoComplete="off">
         <TextField
