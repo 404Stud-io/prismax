@@ -27,8 +27,7 @@ export default function Hero() {
   };
 
   const localData = (value) => {
-    // console.log(value);
-    if (value.content('Auth Succesful')) {
+    if (value?.message ==='Auth Succesful') {
       localStorage.setItem("token", value);
       setLogin(true);
       setDialogOpen(false);
@@ -55,7 +54,7 @@ export default function Hero() {
     };
 
     fetch("https://prismax.herokuapp.com/api/auth/login", requestOptions)
-      .then((response) => response.text())
+      .then((response) => response.json())
       .then((result) => localData(result))
       .catch((error) => setErrorEmail(true));
   };

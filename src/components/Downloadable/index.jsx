@@ -28,9 +28,7 @@ export default function Downloadable() {
       <div className="scheduleContainer ">
         <h1> Agenda</h1>
         <div className="dateChip"> 
-        <h2>
-          XX de xxxx
-          </h2> 
+        <h2>13 de Mayo 2021</h2> 
           </div>
         <img src={Agenda} alt="Agenda"/>
       </div>

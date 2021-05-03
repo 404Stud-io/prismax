@@ -21,7 +21,7 @@ export default function Broadcast() {
       <iframe
         className="chatPrismax"
         src="https://minnit.chat/testPrismax?embed&&nickname="
-        allowTransparency="true"
+        allowtransparency="true"
         title="Chat de la sala de transmisión de Prismax"
       ></iframe>
       <div className="spaceButton"></div>
