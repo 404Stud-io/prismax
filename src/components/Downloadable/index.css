@@ -1,5 +1,5 @@
 .downloaderContainer {
-  background-image: url('../../assets/agend.svg');
+  background-image: url("../../assets/agend.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -11,6 +11,8 @@
   text-align: center;
   color: #fff;
   font-size: 4rem;
+  font-family: Roboto;
+  font-weight: bold;
 }
 .downloaderContainer .containerMenu {
   display: flex;
@@ -23,8 +25,11 @@
   padding: 0 2rem;
   color: #fff;
   font-size: 1.5rem;
+  font-family: Roboto;
+  font-weight: bold;
 }
-.prismax { background-color: #002853;
+.prismax {
+  background-color: #002853;
 }
 .download {
   background-color: #003066;
@@ -45,7 +50,9 @@
   align-items: center;
 }
 .scheduleContainer h1 {
-  color: black;
+  color: #002853;
+  font-family: Roboto;
+  font-weight: normal;
 }
 .scheduleContainer .dateChip {
   border-radius: 50px;
@@ -54,6 +61,8 @@
   background: linear-gradient(to right, #289dd6, #002853);
 
   color: #fff;
+  font-family: Roboto;
+  font-weight: normal;
 }
 .scheduleContainer img {
   width: 90%;

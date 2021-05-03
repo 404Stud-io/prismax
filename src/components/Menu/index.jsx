@@ -23,7 +23,7 @@ export default function Menu() {
               <p>Agenda</p>
             </Link>
             <Link className="containerItemMenu transmission" to="transmission" smooth={true} duration={1000} >
-              <p>Sala de transmición</p>
+              <p>Sala de transmisión</p>
             </Link>
             <Link className="containerItemMenu contact" to='contact'  smooth={true} duration={1000}>
               <p>Contacto</p>  
