@@ -53,6 +53,9 @@
   grid-template-columns: 1fr 1fr;
   padding-top: 40vh;
 }
+.infoContainer .imageHeader {
+  display: none;
+}
 .infoContainer .infoMain {
   width: 80%;
   margin: 0 auto;
@@ -91,6 +94,12 @@
   .infoContainer {
     display: grid;
     grid-template-columns: 1fr;
-    padding-top: 40vh;
+    padding-top: 0;
+    background-image: none;
+    background-color: #012853;
+  }
+  .infoContainer .imageHeader {
+    display: block;
+    width: 100%;
   }
 }

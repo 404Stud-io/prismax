@@ -76,7 +76,7 @@ a {
   .imageContainer .containerAction {
     display: grid;
     row-gap: 1rem;
-    width: 80%;
+    width: 40%;
   }
   .imageContainer .containerAction .buttonRegister {
     width: 80%;

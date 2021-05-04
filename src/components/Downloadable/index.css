@@ -73,4 +73,9 @@
   .downloaderContainer .containerMenu {
     flex-direction: column;
   }
+  .downloaderContainer h1 {
+    margin-top: 2rem;
+    padding: 10px 0px;
+    font-size: 3.5rem;
+  }
 }
