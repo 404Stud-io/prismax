@@ -8,8 +8,7 @@ export default function Model3d() {
       <h1 className="title">Modelo 3D</h1>
       <div className="videoContainer">
         <iframe
-          width="660"
-          height="415"
+        className="iframeVideo"
           src="https://www.youtube.com/embed/Jky9I1ihAkg"
           title="YouTube video player"
           frameBorder="0"

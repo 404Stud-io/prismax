@@ -5,6 +5,7 @@ import "./index.css";
 import robot from "../../assets/robot.png";
 // scroll
 import { Link } from "react-scroll";
+import imageResponsive from '../../assets/prismaxResponsive.png'
 
 export default function Menu() {
   return (
@@ -23,7 +24,7 @@ export default function Menu() {
               <p>Agenda</p>
             </Link>
             <Link className="containerItemMenu transmission" to="transmission" smooth={true} duration={1000} >
-              <p>Sala de transmición</p>
+              <p>Sala de transmisión</p>
             </Link>
             <Link className="containerItemMenu contact" to='contact'  smooth={true} duration={1000}>
               <p>Contacto</p>  
@@ -31,6 +32,7 @@ export default function Menu() {
           </div>
         </div>
         <div className="infoContainer">
+          <img className="imageHeader" src={imageResponsive} alt="hero"/>
           <div className="infoMain">
             <p className="title">PrisMax</p>
             <p className="subTitle">Inovación en CRRT</p>

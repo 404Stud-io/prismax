@@ -1,7 +1,7 @@
 .contactContainer {
   width: 100%;
   height: 800px;
-  background-image: url('../../assets/contact.svg');
+  background-image: url("../../assets/contact.svg");
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -16,16 +16,18 @@
   margin-top: 10rem;
   color: #fff;
   font-family: Roboto;
+  font-weight: bolder;
 }
 .contactContainer .form {
   width: 60%;
   display: grid;
   row-gap: 1rem;
 }
-.form .MuiFormControl-root, .MuiInputBase-root {
-  color: #edefee ;
+.form .MuiFormControl-root,
+.MuiInputBase-root {
+  color: #edefee;
 }
-.form  .MuiFormLabel-root {
+.form .MuiFormLabel-root {
   color: #fff;
 }
 .form button {
@@ -33,8 +35,9 @@
   font-size: 1.5rem;
   padding: 0.5rem 4rem;
   margin: 1rem auto;
+  font-family: Roboto;
+  font-weight: bold;
 }
-
 
 @media only screen and (max-width: 768px) {
   .form button {

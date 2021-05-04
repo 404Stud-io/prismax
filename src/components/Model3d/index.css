@@ -1,21 +1,43 @@
 .modelContainer {
   width: 100vw;
   height: 100vh;
-  background-image: url('../../assets/model3d.svg');
+  background-image: url("../../assets/model3d.svg");
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
 }
 .modelContainer .title {
-  font-weight: 700;
+  font-weight: bold;
   font-size: 4rem;
   color: #fff;
   text-align: center;
+  font-family: Roboto;
+  margin-top: 5px;
 }
 .videoContainer {
   margin: 15vh 0;
+}
+.videoContainer .iframeVideo {
+  width: 660px;
+  height: 415px;
+}
+
+@media only screen and (max-width: 768px) {
+  .videoContainer {
+    margin: 10vh 0 5vh 0;
+  }
+  .videoContainer .iframeVideo {
+    width: 320px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .videoContainer .iframeVideo {
+    width: 300px;
+    height: 200px;
+  }
 }
