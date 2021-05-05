@@ -20,6 +20,8 @@
   justify-content: center;
   max-width: 900px;
   margin: 0 auto;
+  margin-bottom: -1px;
+  padding-bottom: 20px;
 }
 .header .containerMenu .containerItemMenu {
   padding: 0 2rem;

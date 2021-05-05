@@ -65,7 +65,9 @@ a {
   .imageContainer .containerAction {
     margin: 2rem;
     justify-content: space-around;
+    margin-top: 20px;
   }
+  
   .imageContainer img {
     margin-top: 0px;
   }
