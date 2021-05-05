@@ -68,9 +68,8 @@ export default function Hero() {
     <>
       <div className="imageContainer">
         <img className="imageHero" src={imageHero} alt="Imagen heo" />
-        <div className="containerAction">
           {isAuth ? null : (
-            <>
+        <div className="containerAction">
               <a href="https://registro.prismax.com.mx/">
                 <Button
                   type="button"
@@ -88,9 +87,8 @@ export default function Hero() {
               >
                 Acceso
               </Button>
-            </>
-          )}
         </div>
+          )}
         <img src={imageFooter} alt="" />
         <Dialog
           open={dialogOpen}

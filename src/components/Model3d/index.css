@@ -28,10 +28,13 @@
 
 @media only screen and (max-width: 768px) {
   .videoContainer {
-    margin: 10vh 0 5vh 0;
+    margin: 10vh 0 10vh 0;
   }
   .videoContainer .iframeVideo {
     width: 320px;
+  }
+  .modelContainer {
+    height: 100%;
   }
 }
 
@@ -40,4 +43,5 @@
     width: 300px;
     height: 200px;
   }
+  
 }
