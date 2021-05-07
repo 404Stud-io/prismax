@@ -58,13 +58,13 @@ export default function Menu() {
               solución a las necesidades de su unidad de cuidados intensivos,
               maximizando la administración de terapias, la calidad de cuidados
               que recibe el paciente ahora y en el futuro a través de la mejora
-              en simplicidad, eficiencia y precisión.{" "}
+              en simplicidad, eficiencia y precisión.
             </p>
             <p className="detail">
               El sistema PrisMax continúa el compromiso de Baxter con la
               seguridad, con características integradas que monitorean la
               configuración y administración de las terapias, reduciendo los
-              errores humanos.{" "}
+              errores humanos.
             </p>
             <p className="detail underline">Terapias simplificadas</p>
             <p className="detail">
