@@ -8,9 +8,10 @@ export default function Broadcast() {
     <section className="broadcastContainer" id="transmission">
       <img className="logoImage" src={logo} alt="Logo Pismax" />
       <h1 className="title">Sala de transmisión </h1>
+      
       <div className="streamContainer">
         <iframe
-          src="https://vimeo.com/event/914907/embed/ae03d689c7%22"
+          src="https://vimeo.com/event/979305/embed" 
           frameBorder="0"
           allow="autoplay; fullscreen; 
         picture-in-picture"
