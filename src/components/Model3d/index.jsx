@@ -9,7 +9,7 @@ export default function Model3d() {
       <div className="videoContainer">
         <iframe
         className="iframeVideo"
-          src="https://www.youtube.com/embed/Jky9I1ihAkg"
+          src="https://player.vimeo.com/video/548510593"
           title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
