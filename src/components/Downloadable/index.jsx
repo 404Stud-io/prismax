@@ -32,12 +32,18 @@ export default function Downloadable() {
         >
           <p>Drenaje Autosuficiente</p>
         </a>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://firebasestorage.googleapis.com/v0/b/mystorage-af4f8.appspot.com/o/FT%20Thermax.pdf?alt=media&token=3e6dd815-48da-42a2-a950-ec21bfc2f601"
+          className="containerItemMenu contact"
+        >
+          <p>Thermax</p>
+        </a>
         {/* <div className="containerItemMenu transmission">
           <p>Material 4</p>
         </div>
-        <div className="containerItemMenu contact">
-          <p>Material 5</p>
-        </div> */}
+      */}
       </div>
 
       <div className="scheduleContainer " id="schedule">
