@@ -12,7 +12,6 @@ export const ContextProvider = ({ children }) => {
     COUNTRY: "",
     TYPEINST: "",
     AGENT: "",
-    // specialty: "",
     DEGREE: "",
     PERMISO: "",
     checkOne: false,
@@ -27,7 +26,7 @@ export const ContextProvider = ({ children }) => {
 
   const [login, setLogin] = useState(false);
 
-  const [isAuth, setIsAuth] = useState(false)
+  const [isAuth, setIsAuth] = useState(true)
 
 
  // return Value
